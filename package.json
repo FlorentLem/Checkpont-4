@@ -1,0 +1,29 @@
+{
+  "name": "checkpoint-4",
+  "version": "1.0.0",
+  "description": "myfolio",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "multer": "^1.4.2",
+    "mysql2": "^2.2.5",
+    "nodemailer": "^6.4.17",
+    "nodemailer-express-handlebars": "^4.0.0",
+    "nodemon": "^2.0.7",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "sequelize": "^6.5.0",
+    "sequelize-cli": "^6.2.0",
+    "socket.io-client": "^3.1.0",
+    "validator": "^13.5.2"
+  }
+}

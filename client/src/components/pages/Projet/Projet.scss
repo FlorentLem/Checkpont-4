@@ -1,0 +1,131 @@
+.projet {
+  &__globalContainer {
+    color: #333333;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__left {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__right {
+    width: 85%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__title {
+    text-align: center;
+    color: white;
+    margin-top: 60px;
+    width: 85%;
+    min-height: 75vh;
+    background-color: #333333;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    h1 {
+      padding: 0 20px 0 20px;
+      font-weight: 300;
+      font-size: 45px;
+    }
+  }
+  &__image {
+    width: 95%;
+    height: 35vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+  }
+  &__intro {
+    text-align: center;
+    width: 90%;
+    margin-top: 65px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    min-height: 75vh;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    h2 {
+      font-size: 50px;
+      font-weight: 300;
+    }
+    p {
+      font-size: 26px;
+      padding: 20px 50px 20px 50px;
+    }
+    h3 {
+      font-size: 28px;
+      font-weight: 300;
+    }
+    ul {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      width: 100%;
+      list-style: none;
+      font-size: 70px;
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .projet {
+    &__globalContainer {
+      flex-direction: column;
+    }
+    &__right {
+      width: 100%;
+      min-height: 100vh;
+    }
+    &__left {
+      width: 100%;
+      min-height: 100vh;
+    }
+    &__title {
+      width: 100%;
+      min-height: 100vh;
+      margin-top: 0;
+      border-radius: 0;
+      box-shadow: none;
+    }
+    &__intro {
+      margin-top: 0;
+      width: 100%;
+      min-height: 100vh;
+      border-radius: 0;
+      box-shadow: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .projet {
+    &__intro {
+      margin-top: 50px;
+      h2 {
+        font-size: 40px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+}
